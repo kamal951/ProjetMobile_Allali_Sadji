@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Realm.Views.AddTeamPage"
+             Title="Ajout nouvelle équipe">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save"
+                     Icon="ic_save.png"
+                     Command="{Binding SaveTeamCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Entry Placeholder="Nom d'équipe"
+                   Text="{Binding Title}"
+                   Margin="4" />
+            
+            <Entry Placeholder="Capitaine"
+                   Text="{Binding Manager}"
+                   Margin="4" />
+
+            <Entry Placeholder="Ville"
+                   Text="{Binding City}"
+                   Margin="4" />
+
+            <Entry Placeholder="Stade"
+                   Text="{Binding StadiumName}"
+                   Margin="4" />
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
